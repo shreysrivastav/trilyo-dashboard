@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f4d5a353e4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style_1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Users & Groups</title>
+</head>
+
+<body>
+    <!-- Left bar -->
+    <div class="dashboard-outer-box">
+        <div class="d-none d-lg-flex justify-content-center d-outer-left">
+            <ul class="outer-left-link m-0 p-0">
+                <li><a href="#"><img src="assets/img/img-1.png" alt=""></a></li>
+            </ul>
+        </div>
+
+        <!--  Right Area -->
+        <div class="d-outer-right">
+            <!-- Header( Consistent for every page) -->
+            <div class="d-flex align-items-center justify-content-between header-area">
+                <h4 class='d-flex align-items-center'>
+                    <a href="./settings.html" class="text-decoration-none text-dark"><i class="fas fa-chevron-left"></i></a>&ensp;&nbsp;
+                    Users & Groups
+                </h4>
+            </div>
+            <!--main content -->
+            <div class="main-area-wrapper row no-gutters bg-white setting2 pl-5">
+                <div class="sub-header row-1 py-0 w-100 p-5 pb-0">
+                    <ul class="nav w-100 py-0  d-flex row">
+                        <li class="nav-item col-m">
+                            <a class="nav-link font-weight-bold border-bottom border-primary active" href="#">Users</a>
+                        </li>
+                        <li class="nav-item col-m">
+                            <a class="nav-link font-weight-bold text-dark" href="#">Groups</a>
+                        </li>
+                        <li class="nav-item float-right col">
+                            <button class="btn text-white border-0 font-weight-normal px-4 py-2 float-right add-member"
+                                data-toggle="modal" data-target="#edit">
+                                <small>Add New Member </small>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-5 py-0 table-responsive pt-0">
+                    <table class="table table-striped pt-0">
+                        <thead class="table-header">
+                            <tr>
+                                <th scope="col"><input type="checkbox"
+                                        class="border-1 border-muted text-normal align-middle" name="" id=""></th>
+                                <th scope="col">Name&ensp;<i class="fas fa-sort"></i></th>
+                                <th scope="col">Email&ensp;<i class="fas fa-sort"></i></th>
+                                <th scope="col">Role&ensp;<i class="fas fa-sort"></i></th>
+                                <th scope="col">Groups&ensp;<i class="fas fa-sort"></i></th>
+                                <th scope="col">Manage</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><input type="checkbox" class="border-1 border-muted my-3 "
+                                        name="" id="">
+                                </th>
+                                <td class="align-middle">John Doe</td>
+                                <td class="align-middle">john@doe.com</td>
+                                <td class="align-middle">admin</td>
+                                <td class="align-middle">Support,Sales</td>
+                                <td class="align-middle"><a href="#" class="text-decoration-none text-dark"
+                                        data-toggle="modal" data-target="#edit">Edit</a></td>
+                                <td class="align-middle"><i class="far fa-trash-alt text-danger"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" class="border-1 border-muted my-3"
+                                        name="" id="">
+                                </th>
+                                <td class="align-middle">Someone Doe</td>
+                                <td class="align-middle">someone@doe.com</td>
+                                <td class="align-middle">Agent</td>
+                                <td class="align-middle">Support</td>
+                                <td class="align-middle"><a href="#" class="text-decoration-none text-dark"
+                                        data-toggle="modal" data-target="#edit">Edit</a></td>
+                                <td class="align-middle"><i class="far fa-trash-alt text-danger"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" class="border-1 border-muted my-3"
+                                        name="" id="">
+                                </th>
+                                <td class="align-middle">Someoneelse Doe</td>
+                                <td class="align-middle">someoneelse@doe.com</td>
+                                <td class="align-middle">Manager</td>
+                                <td class="align-middle">Sales</td>
+                                <td class="align-middle"><a href="#" class="text-decoration-none text-dark"
+                                        data-toggle="modal" data-target="#edit">Edit</a></td>
+                                <td class="align-middle"><i class="far fa-trash-alt text-danger"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="edit" class="modal fixed-left w-100 p-0 fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-aside w-100 p-0" role="document">
+            <div class="modal-content px-3 h-100">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title font-weight-bolder" id="exampleModalLabel">Invite Team Member(s)</h5>
+                </div>
+                <div class="modal-body text-black border-0">
+                    <p> Enter email ID(s):</p>
+                    <textarea name="email" id="" cols="30" rows="7"
+                        class="w-100 border border-muted rounded"></textarea>
+                    <br><br>
+                    <div class="dropdown row d-flex align-items-center ml-1 assign-roles">
+                        <span class="d-inline-block col-sm-2.5  align-middle py-1 ">Assign Roles:</span>&ensp;
+                        <button class="btn btn-light border border-muted rounded text-black dropdown-toggle"
+                            type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Dropdown&ensp;&ensp;&ensp;&ensp;&ensp; 
+                        </button>
+                        <div class="dropdown-menu groups-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Action 1</button>
+                            <button class="dropdown-item" type="button">Action 2</button>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row pl-2">
+                        <span class="d-inline-block col-2 py-2">Groups:</span>&ensp;&ensp;
+                        <input type="text" class='border border-muted rounded' placeholder="Bootstrap tags" name="" id="groups">
+                    </div>
+                </div>
+                <div class="modal-footer border-top-3 border-muted">
+                    <button type="button" class="btn btn-secondary col-3 p-1"
+                        data-dismiss="modal">Cancel</button>&ensp;&ensp;
+                    <button type="button" class="btn btn-success text-white col-3 p-1">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f4d5a353e4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/style_1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+    <title>Canened Messages</title>
+</head>
+
+<body>
+    <!-- Left bar -->
+    <div class="dashboard-outer-box">
+        <div class="d-none d-lg-flex justify-content-center d-outer-left">
+            <ul class="outer-left-link m-0 p-0">
+                <li><a href="#"><img src="../assets/img/img-1.png" alt=""></a></li>
+            </ul>
+        </div>
+
+        <!--  Right Area -->
+        <div class="d-outer-right">
+            <!-- Header( Consistent for every page) -->
+            <div class="d-flex align-items-center justify-content-between header-area">
+                <h4 class='d-flex align-items-center'>
+                    <a href="../settings.html" class="text-decoration-none text-dark">
+                        <i class="fas fa-chevron-left text-dark"></i></a>&ensp;&nbsp;
+                    Routing Rules
+                </h4>
+            </div>
+            <!--main content -->
+            <div class="main-area-wrapper row no-gutters bg-white p-0 routin-rules">
+                <div class="col-xl-2 col-lg-3 h-100">
+                    <div class="d-flex align-items-center justify-content-center second-bar-wrap border-right h-100 py-3">
+                        <button class="box-btn px-0 text-white rounded add-new" data-toggle="modal" data-target="#edit">Add
+                            Canned Message</button>
+                    </div>
+                    <div class="d-flex align-items-center py-3 second-bar-wrap1 border-right h-100">
+                        My Canned Messages
+                    </div>
+                    <div class="rule-panel">
+                        <div class="rule-status-wrap">
+                            <div class="accor-btn d-flex align-items-center" 
+                                role="button" aria-expanded="true">
+                                <b>Shared Canned Messages &ensp;</b>
+                                <i class="fas fa-plus-circle"></i>
+                        </div>
+                            <div class="accor-content collapse show" id="collapse2">
+                                <div class="rule-rw">
+                                    <p>Sales Team</p>
+
+                                </div> <!-- ./rule-rw -->
+                                <div class="rule-rw mt-n1">
+                                    <p>Support Team</p>
+
+                                </div> <!-- ./rule-rw -->
+                                <div class="rule-rw mt-n1">
+                                    <p>Payment Team</p>
+                                </div> <!-- ./rule-rw -->
+                            </div>
+                        </div> <!-- ./rule-status-wrap -->
+                    </div>
+                </div>
+                <div class="col-xl-10 col-lg-9  d-flex flex-column message-box pt-4 mb-0 pb-0 px-3">
+                    <strong class="inbox">My Canned Message</strong>
+                    <div class="rounded bg-white canned-messages mt-3 mb-0 pr-0">
+                        <div class="d-flex align-items-center second-bar-wrap2">
+                            <i class="fas fa-search"></i>
+                            <input type="search" class="gcse-search" name=""
+                                placeholder="          Search Canned Message by Name or Text">
+                        </div>
+                        <div class="msg-list pb-0 mb-0">
+                            <table class="table w-100 p-0 m-0">
+                                <thead class="table-header w-100">
+                                    <tr>
+                                        <th scope="col"><input type="checkbox"
+                                                class="border-1 border-muted text-normal align-middle" name="" id="">
+                                        </th>
+                                        <th scope="col">SLASH COMMANDS</th>
+                                        <th scope="col">MESSAGES</th>
+                                        <th scope="col">RATING</th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><input type="checkbox" class="border-1 border-muted  mt-3"
+                                                name="" id="">
+                                        </th>
+                                        <td class="align-middle">/test</td>
+                                        <td class="align-middle">Hi <span>{{namelthere}}</span>, I'm your personal
+                                            counsellor Mike. How can<br>I help you today</td>
+                                        <td class="align-middle">
+                                            <div class="rating-high d-flex justify-content-center">High</div>
+                                        </td>
+                                        <td class="align-middle"><a href="#" class="text-decoration-none text-dark"
+                                                data-toggle="modal" data-target="#edit"><i class="fas fa-pen"></i></a>
+                                        </td>
+                                        <td class="align-middle"><i class="far fa-trash-alt text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><input type="checkbox" class="border-1 border-muted mt-3"
+                                                name="" id="">
+                                        </th>
+                                        <td class="align-middle">/test</td>
+                                        <td class="align-middle">Hi <span>{{namelthere}}</span>, I'm your personal
+                                            counsellor Mike. How can<br>I help you today</td>
+                                        <td class="align-middle">
+                                            <div class="rating-low d-flex justify-content-center">Low</div>
+                                            </t>
+                                        <td class="align-middle"><a href="#" class="text-decoration-none text-dark"
+                                                data-toggle="modal" data-target="#edit"><i class="fas fa-pen"></i></a>
+                                        </td>
+                                        <td class="align-middle"><i class="far fa-trash-alt text-danger"></i></td>
+                                    </tr>
+                                    <tr class="border-bottom">
+                                        <th scope="row"><input type="checkbox" class="border-1 border-muted mt-3"
+                                                name="" id="">
+                                        </th>
+                                        <td class="align-middle">/test</td>
+                                        <td class="align-middle">Hi <span>{{namelthere}}</span>, I'm your personal
+                                            counsellor Mike. How can<br>I help you today</td>
+                                        <td class="align-middle">
+                                            <div class="rating-high d-flex justify-content-center">High</div>
+                                        </td>
+                                        <td class="align-middle"><a href="#" class="text-decoration-none text-dark"
+                                                data-toggle="modal" data-target="#edit"><i class="fas fa-pen"></i></a>
+                                        </td>
+                                        <td class="align-middle"><i class="far fa-trash-alt text-danger"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="footer rounded-bottom m-0 my-0 w-100 py-0 border-top border-right mr-0 pb-0 mb-0 d-flex justify-content-end align-items-center">
+                            <span class="dropdown">
+                                Rows Per Page:
+                                <button class="dropdown-toggle row-sort" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                10
+                            </button>
+                            <div class="row-number dropdown-menu " aria-labelledby="dropdownMenu4">
+                                <button class="dropdown-item row-items" type="button">10</button>
+                                <hr>
+                                <button class="dropdown-item row-items " type="button">20</button>
+                                <hr>
+                                <button class="dropdown-item row-items" type="button">30</button>
+                            </div>
+                            </span>
+                            <span>
+                                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                                1-10 of 276&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                                <i class="fas fa-chevron-left back"></i>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                                <i class="fas fa-chevron-right"></i>
+
+                            </span>
+                        </div> 
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="edit" class="modal fixed-left w-100 p-0 fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-aside w-100 p-0" role="document">
+            <div class="modal-content px-0 h-100">
+                <div class="modal-header border-0">
+                    <h6 class="modal-title font-weight-bolder canned-modal" id="exampleModalLabel">Add Canned Message
+                    </h6>
+                </div>
+                <div class="modal-body text-black border-0">
+                    <span class="text-dark enter-message">Enter Canned Message(s):</span>
+                    <textarea name="email" id="" cols="70" rows="7"
+                        class="border border-muted rounded"></textarea>
+                    <br><br>
+                    <div class="code d-flex rounded p-0">
+                        <div class=" d-flex align-items-center justify-content-center slash">
+                            <i class="fas fa-slash"></i>
+                        </div>
+                        <input type="text" class="text-dark command-name" placeholder="    Slash Command Name" name=""
+                            id="">
+                    </div>
+                    <br>
+                    <div class="dropdown row align-middle ml-1 custom-carets">
+                        <span class="d-inline-block align-middle py-1 mt-3 enter-message ">Add Messeage To:</span>&ensp;
+                        <button
+                            class=" border border-muted align-items-left align-middle rounded dropdown-toggle pl-3 mt-1 message-group"
+                            type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <span class="text">My Canned Message</span>
+                            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                        </button>
+                        <div class="dropdown-menu d-m" aria-labelledby="dropdownMenu3">
+                            <button class="dropdown-item d-flex align-items-center" type="button">Action</button>
+                            <button class="dropdown-item d-flex align-items-center" type="button">Another action</button>
+                            <button class="dropdown-item d-flex align-items-center" type="button">Something else here</button>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+                <div class="modal-footer border-top-3 border-muted">
+                    <button type="button" class="btn btn-dark col-2 p-1"
+                        data-dismiss="modal">Cancel</button>&ensp;&ensp;
+                    <button type="button" class="btn btn-success text-white col-2 p-1">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/f4d5a353e4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../assets/css/style_1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <title>Businesshour Configurations</title>
+</head>
+
+<body>
+  <!-- Left bar -->
+  <div class="dashboard-outer-box">
+    <div class="d-none d-lg-flex justify-content-center d-outer-left">
+      <ul class="outer-left-link m-0 p-0">
+        <li><a href="#"><img src="../assets/img/img-1.png" alt=""></a></li>
+      </ul>
+    </div>
+
+    <!--  Right Area -->
+    <div class="d-outer-right">
+      <!-- Header( Consistent for every page) -->
+      <div class="d-flex align-items-center justify-content-between header-area">
+        <h4 class='d-flex align-items-center'>
+          <a href="../settings.html" class="text-decoration-none text-dark">
+            <i class="fas fa-chevron-left text-dark"></i></a>&ensp;&nbsp;
+          Business Hour
+        </h4>
+      </div>
+      <!--main content -->
+      <div class="main-area-wrapper row no-gutters bg-white p-0 routin-rules">
+        <div class="col-xl-2 col-lg-3 h-100">
+          <div class="d-flex align-items-center justify-content-center second-bar-wrap border-right h-100 py-3">
+            <button class="box-btn px-0 text-white rounded add-new" data-toggle="modal" data-target="#edit">Add
+              Business Hours</button>
+          </div>
+          <div class="border-bottom border-right py-3 pr-3 h-100">
+            <div class="accor-btn" aria-expanded="true">
+              <b class="">Default</b>
+            </div>
+            <div class="rule-rw ml-3">
+              <p>Default Business Hours</p>
+              <div class="toggle-switch mt-n2">
+                <input type="checkbox" id="chkTest" name="chkTest" checked="">
+                <label for="chkTest">
+                  <span class="toggle-track"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="rule-panel">
+            <div class="rule-status-wrap">
+              <div class="accor-btn d-flex align-items-center" role="button" aria-expanded="true">
+                <b>Others</b>
+              </div>
+              <div class="accor-content collapse show" id="collapse2">
+                <div class="rule-rw">
+                  <p>Sales Team</p>
+                  <div class="toggle-switch mt-n2">
+                    <input type="checkbox" id="chkTest1" name="chkTest">
+                    <label for="chkTest1">
+                      <span class="toggle-track"></span>
+                    </label>
+                  </div>
+
+                </div> <!-- ./rule-rw -->
+                <div class="rule-rw mt-n1">
+                  <p>Support Team</p>
+                  <div class="toggle-switch mt-n2">
+                    <input type="checkbox" id="chkTest2" name="chkTest" checked="">
+                    <label for="chkTest2">
+                      <span class="toggle-track"></span>
+                    </label>
+                  </div>
+
+                </div> <!-- ./rule-rw -->
+                <div class="rule-rw mt-n1">
+                  <p>Some Country</p>
+                  <div class="toggle-switch mt-n2">
+                    <input type="checkbox" id="chkTest3" name="chkTest" checked="">
+                    <label for="chkTest3">
+                      <span class="toggle-track"></span>
+                    </label>
+                  </div>
+                </div> <!-- ./rule-rw -->
+              </div>
+            </div> <!-- ./rule-status-wrap -->
+          </div>
+        </div>
+        <div class="col-xl-10 col-lg-9">
+          <div class="d-flex align-items-center justify-content-between second-bar-wrap ">
+            <div class="rule-name d-flex align-items-center edit-hours">
+              <input class="pg-title edit-hours" placeholder="Name Buisness Hour "><span class="edit"><img
+                  src="assets/img/edit-icon.svg" alt=""></span>
+            </div>
+            <div class="crud-btn-wrap buisness-hour-button">
+              <button type="button" class="btn btn-dark p-1 py-2">Cancel</button>&ensp;&ensp;
+              <button type="button" class="btn btn-success text-white p-1 py-2">Save</button>
+            </div>
+          </div>
+          <div class="main-hours-area">
+            <div class="dropdown ">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select Timezone
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div><br>
+            <div class="items d-flex">
+              <div class="duration-hours">
+                <span class="item-title ">Business Hours</span><br>
+                <div class="duration rounded">
+                  <div class="row d-flex align-items-center justify-content-around py-2">
+                    <input type="checkbox" name="" id="">
+                    <span class="col-2">Monday</span>
+                    <div class="dropdown ">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        10:00 A.M.&nbsp;
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item " href="#">11:00 A.M.</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.</a>
+                      </div>
+                    </div>
+                    to
+                    <div class="dropdown ">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        07:30 P.M.&nbsp;
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row d-flex align-items-center justify-content-around py-2">
+                    <input type="checkbox" name="" id="">
+                    <span class="col-2">Tuesday</span>
+                    <div class="dropdown ">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        10:00 A.M.&nbsp;
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                      </div>
+                    </div>
+                    to
+                    <div class="dropdown ">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        07:30 P.M.&nbsp;
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row d-flex align-items-center justify-content-around py-2">
+                    <input type="checkbox" name="" id="">
+                    <span class="col-2">Wednesday</span>
+                    <div class="dropdown ">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        10:00 A.M.&nbsp;
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                      </div>
+                    </div>
+                    to
+                    <div class="dropdown ">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        07:30 P.M.&nbsp;
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row d-flex align-items-center justify-content-around py-2">
+                    <input type="checkbox" name="" id="">
+                    <span class="col-2">Thursday</span>
+                    <div class="dropdown ">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        10:00 A.M.&nbsp;
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                      </div>
+                    </div>
+                    to
+                    <div class="dropdown ">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        07:30 P.M.&nbsp;
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row d-flex align-items-center justify-content-around py-2">
+                    <input type="checkbox" name="" id="">
+                    <span class="col-2">Friday</span>
+                    <div class="dropdown ">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        10:00 A.M.&nbsp;
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                      </div>
+                    </div>
+                    to
+                    <div class="dropdown ">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        07:30 P.M.&nbsp;
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row d-flex align-items-center justify-content-around py-2">
+                    <input type="checkbox" name="" id="">
+                    <span class="col-2">Saturday</span>
+                    <div class="dropdown ">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        10:00 A.M.&nbsp;
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                      </div>
+                    </div>
+                    to
+                    <div class="dropdown ">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        07:30 P.M.&nbsp;
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row d-flex align-items-center justify-content-around py-2">
+                    <input type="checkbox" name="" id="">
+                    <span class="col-2">Sunday</span>
+                    <div class="dropdown ">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        10:00 A.M.&nbsp;
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                      </div>
+                    </div>
+                    to
+                    <div class="dropdown ">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        07:30 P.M.&nbsp;
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                        <a class="dropdown-item " href="#">11:00 A.M.&nbsp;</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="away-mssg ml-5">
+                <span class="item-title">Away Message</span><br>
+                <textarea name="" id="" class="rounded border-muted" cols="55" rows="8"></textarea>
+                <br>
+                <span class="item-title row d-flex align-items-center ml-0">
+                  <input type="checkbox">&ensp;&nbsp;
+                  Capture users details if not shared earlier
+                </span>
+                <span class="item-title row d-flex align-items-center ml-5 mt-n1">
+                  <input type="checkbox" name="" id="">&ensp;&ensp;Name&ensp;&ensp;&ensp;
+                  <input type="checkbox" name="" id="">&ensp;&ensp;Email&ensp;&ensp;&ensp;
+                  <input type="checkbox" name="" id="">&ensp;&ensp;Mobile&ensp;&ensp;&ensp;
+                  <input type="checkbox" name="" id="">&ensp;&ensp;Description&ensp;&ensp;&ensp;
+                </span>
+
+                <div class="item-title row d-flex align-items-center ml-0 mt-3">
+                  <input type="checkbox" name="" id="">&ensp;&nbsp;
+                  Assign all incoming conversations to&ensp;
+                  <div class="dropdown ">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown&ensp;&ensp;&ensp;&nbsp;&ensp;&ensp;&ensp;&nbsp;
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Action1</a>
+                      <a class="dropdown-item" href="#">Action2</a>
+                    </div>
+                  </div>
+                </div>
+                <span class="item-title row d-flex align-items-center ml-0 mt-3">
+                  <input type="checkbox">&ensp;&nbsp;
+                  Email a copy of conversation to &ensp;
+                  <input class="rounded" type="email" name="" id="">
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

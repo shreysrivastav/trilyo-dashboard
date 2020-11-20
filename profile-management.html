@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f4d5a353e4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/style_1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <title>Account Settings</title>
+</head>
+
+<body>
+    <!-- Left bar -->
+    <div class="dashboard-outer-box">
+        <div class="d-none d-lg-flex justify-content-center d-outer-left">
+            <ul class="outer-left-link m-0 p-0">
+                <li><a href="#"><img src="../assets/img/img-1.png" alt=""></a></li>
+            </ul>
+        </div>
+
+        <!--  Right Area -->
+        <div class="d-outer-right">
+            <!-- Header( Consistent for every page) -->
+            <div class="d-flex align-items-center justify-content-between header-area">
+                <h4 class='d-flex align-items-center'>
+                    <a href="../settings.html" class="text-decoration-none text-dark">
+                        <i class="fas fa-chevron-left text-dark"></i></a>&ensp;&nbsp;
+                    Account Settings
+                </h4>
+            </div>
+            <!--main content -->
+            <div class="main-area-wrapper row no-gutters bg-white p-0 routin-rules">
+                <div class="col-xl-2 col-lg-3 h-100">
+                    <div
+                        class="d-flex align-items-center justify-content-center second-bar-wrap border-right h-100 py-1 px-1">
+                        <div class="accor-btn d-flex align-items-center general-settings" role="button"
+                            aria-expanded="true">
+                            <b>General &ensp;</b>
+                        </div>
+                    </div>
+                    <div
+                        class="d-flex align-items-center justify-content-center second-bar-wrap border-right h-100 py-1 px-1 notification-settings">
+                        <div class="accor-btn d-flex align-items-center notifications" role="button"
+                            aria-expanded="true">
+                            <b>
+                                Notifications &ensp;</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-10 col-lg-9  d-flex flex-column message-box p-3">
+                    <div class="pl-3 pt-2 pb-3 bg-white account-details-entry rounded">
+                        <h6 class="w-100">Personal Settings</h6>
+                        <div class="d-flex justify-content-between mt-3">
+                            <div class="details-entry d-inline-block">
+                                <div class="py-1">
+                                    <label for="Firstname"> First Name</label>
+                                    <input type="text" class="ml-3 rounded" name="Firstname" id="Firstname">
+                                </div>
+                                <br>
+                                <div class="py-1 ">
+                                    <label for="Firstname"> Last Name</label>
+                                    <input type="text" class="ml-3 rounded" name="Firstname" id="Firstname">
+                                </div>
+                                <br>
+                                <div class="py-1">
+                                    <label for="Firstname"> Email&nbsp;</label>
+                                    <input type="email" class="ml-5 rounded" name="Firstname" id="Firstname">
+                                </div>
+                            </div>
+                            <div class="card border-0 d-flex mt-3">
+                                <i class="far fa-user-circle card-img-top"></i>
+                                <div class="card-body">
+                                    <button class="btn btn-dark py-2 px-4">Upload Picture</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pl-3 pt-2 pb-3 bg-white account-details-entry rounded mt-3">
+                        <div class="d-flex align-items-center justify-content-between pr-4">
+                            <h6>Change Password</h6>
+                            <p class="forgot-password">Forgot your password? <a href="#">Reset Here</a></p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="password-entry d-inline-block">
+                                <div class="py-1">
+                                    <label for="Firstname"> Old Password&ensp;&ensp;</label>
+                                    <input type="text" class="ml-4 rounded" name="Firstname" id="Firstname">
+                                </div>
+                                <br>
+                                <div class="py-1 ">
+                                    <label for="Firstname"> New Password&ensp;</label>
+                                    <input type="text" class="ml-4 rounded" name="Firstname" id="Firstname">
+                                </div>
+                                <br>
+                                <div class="py-1">
+                                    <label for="Firstname"> Re-enter Password</label>
+                                    <input type="email" class="ml-2 rounded" name="Firstname" id="Firstname">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white d-flex align-items-center justify-content-center account-details-entry rounded mt-3">
+                        <button class="btn btn-danger text-white delete-account px-4 py-2 my-3">DELETE ACCOUNT</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
